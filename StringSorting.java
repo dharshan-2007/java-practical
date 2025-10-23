@@ -14,7 +14,11 @@ public class StringSorting {
             names[i] = sc.nextLine();
         }
         Arrays.sort(names);
+        System.out.println("Sorted String");
         for(String name:names)
+        {
+            System.out.println(name);
+        }
         
     }
 }
