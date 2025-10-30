@@ -1,5 +1,4 @@
 
-import javax.swing.plaf.synth.SynthPanelUI;
 
 abstract class Shape
 {
@@ -39,6 +38,20 @@ class Circle extends Shape
     }
     void printArea()
     {
-        ("Area of Circle : "+(3.14*x*x));
+        System.out.println("Area of Circle : "+(3.14*x*x));
+    }
+}
+
+public class AbstractClass_Shape
+{
+    public static void main(String[] args) {
+        {
+            Rectangle r1=new Rectangle(10,20);
+            Triangle t1=new Triangle(10,5);
+            Circle c1=new Circle(15);
+            r1.printArea();
+            t1.printArea();
+            c1.printArea();
+        }
     }
 }
